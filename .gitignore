@@ -1,0 +1,11 @@
+# env file
+.env
+
+# pdf file
+pdfs/
+
+# result file
+result.json
+
+# DS store
+.DS_Store
