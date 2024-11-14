@@ -1,6 +1,9 @@
 # env file
 .env
 
+# venv file
+.venv
+
 # pdf file
 pdfs/
 
@@ -9,3 +12,8 @@ result.json
 
 # DS store
 .DS_Store
+
+# build.sh
+build.sh
+
+.idea
