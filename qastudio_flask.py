@@ -442,7 +442,7 @@ def ask_senarios():
         }), 500
     
 """
-curl -X POST http://<your-server-domain>/delete \
+curl -X POST http://api/v1/ai/project/delete \
 -H "Content-Type: application/json" \
 -d '{"assistant_id": "<your_assistant_id>"}'
 """
