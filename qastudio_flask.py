@@ -444,11 +444,10 @@ def ask_senarios():
     
 @app.route('/delete', methods=['POST'])
 def delete_file():
-    """파일 제거 API."""
+    """assistant 제거 API."""
     data = request.json
-    file_id = data.get('file_id')
     assistant_id = data.get('assistant_id')
-    if not file_id:
+    if not assistant_id:
         return jsonify({
             "success": False,
             "msg": "File ID is required",
@@ -457,7 +456,6 @@ def delete_file():
 
     try:
         # 파일 제거
-        client.files.delete(file_id)
         client.beta.assistants.delete(assistant_id)
 
         return jsonify({
