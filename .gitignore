@@ -9,3 +9,12 @@ result.json
 
 # DS store
 .DS_Store
+
+# result files directory
+project_files
+
+# test file directory
+project
+
+# temp
+temp
