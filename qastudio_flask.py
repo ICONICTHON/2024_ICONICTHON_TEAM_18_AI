@@ -441,7 +441,11 @@ def ask_senarios():
             "error": str(e)
         }), 500
     
-    
+"""
+curl -X POST http://<your-server-domain>/delete \
+-H "Content-Type: application/json" \
+-d '{"assistant_id": "<your_assistant_id>"}'
+"""
 @app.route('/delete', methods=['POST'])
 def delete_file():
     """assistant 제거 API."""
